@@ -1,3 +1,5 @@
+#Trabalho referente a disciplina de redes - Ciência da Computação - Mackenzie.
+
 class Jogo:
     def __init__(self, id):
         #Número do Jogo

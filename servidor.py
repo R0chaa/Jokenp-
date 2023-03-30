@@ -3,9 +3,12 @@ from _thread import *
 import pickle
 from jogo import Jogo
 
-TCP_IP = "192.168.1.17"
+#Trabalho referente a disciplina de redes - Ciência da Computação - Mackenzie.
+
+TCP_IP = "YOUR IPV4 ADRESS"
 TCP_PORTA = 3214
 TAMANHO_BUFFER = 4096
+
 # Criação de socket TCP
 servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 

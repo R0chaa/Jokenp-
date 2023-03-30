@@ -10,7 +10,7 @@ import webbrowser
 class TCP_IP:
     def __init__(self):
         self.cliente = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.TCP_IP = "192.168.1.17"
+        self.TCP_IP = "YOUR IPV4 ADRESS"
         self.PORTA = 3214
         self.bind = (self.TCP_IP, self.PORTA)
         self.conectar = self.connect()
