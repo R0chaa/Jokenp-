@@ -5,6 +5,7 @@ import pygame
 import webbrowser
 
 #Referencias: para botoes utilizando PNG: https://github.com/russs123/pygame_tutorials/tree/main/Button
+#Trabalho referente a disciplina de redes - Ciência da Computação - Mackenzie.
 
 class TCP_IP:
     def __init__(self):

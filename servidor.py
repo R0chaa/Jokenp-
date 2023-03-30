@@ -40,6 +40,7 @@ def thread_cliente(conn, jogador, IdJogo):
         del Jogos[IdJogo]
     except:
         pass
+
     IDs -= 1
     conn.close() 
 
@@ -53,12 +54,13 @@ while True:
     key = 0
     IDs += 1
     IDJogo = (IDs - 1) // 2
+
     if IDs % 2 == 1: #Cria um novo jogo e deixa o jogador na tela de espera
         Jogos[IDJogo] = Jogo(IDJogo)
         print("Criando novo jogo...")
+        
     else: #Segundo jogador entra e inicia o jogo
         Jogos[IDJogo].pronto = 1
         key = 1
-
 
     start_new_thread(thread_cliente, (conn, key, IDJogo))
